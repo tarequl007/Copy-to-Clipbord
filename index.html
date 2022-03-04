@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Copy Clip Bord</title>
+</head>
+
+<body>
+    <div id="container">
+        <div class="gift-image">
+            <img src="background-img.jpg" alt="">
+            <div class="copy-area">
+                <div class="left-side">
+                    <button class="btn">Copy</button>
+                </div>
+                <div class="right-side">
+                    <div class="redeem-text"><label>Redeem Code</label></div>
+                    <div> <input type="text" value="34I-YU-26-JHK" name="" id="input" readonly></div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- JavaScript Area -->
+
+        <script>
+            // const input = document.getElementById("input")
+            // const btn = document.getElementById("btn")
+
+            const input = document.querySelector('#input');
+            const btn = document.querySelector('.btn')
+
+            btn.onclick = function() {
+                input.select();
+                document.execCommand('copy');
+                alert('Copied');
+            }   
+        </script>
+
+</body>
+
+</html>

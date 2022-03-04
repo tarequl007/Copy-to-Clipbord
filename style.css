@@ -1,0 +1,55 @@
+#container {
+    width: 400px;
+    margin: auto;
+}
+
+.gift-image img {
+    border-radius: 15px;
+    height: 200px;
+    width: 400px;
+}
+
+.copy-area {
+    display: flex;
+}
+
+.left-side {
+    flex-basis: 48%;
+    padding: 20px 10px;
+}
+
+.right-side {
+    flex-basis: 48%;
+    padding: 10px;
+    margin-left: 150px;
+}
+
+button {
+    padding-left: 10px;
+    background-color: #ddd;
+    font-size: 18px;
+    padding: 5px 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+}
+
+.redeem-text {
+    margin-bottom: 5px;
+    font-family: sans-serif;
+}
+
+#input {
+    border: none;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+#input:focus {
+    border: none;
+    outline: none;
+}
+
+#input::selection {
+    background-attachment: #ddd;
+}
